@@ -2,11 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Gualoto_Romel_ExamenP2.RecargaPage"
-             Title="RecargaPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Recarga">
+    <StackLayout>
+        <Label x:Name="rgualoto_label1" Text="Nombre:" />
+        <Entry x:Name="rgualoto_entry1" Placeholder="Ingrese su nombre" />
+        <Label x:Name="rgualoto_label2" Text="Teléfono:" />
+        <Entry x:Name="rgualoto_entry2" Placeholder="Ingrese su número telefónico" Keyboard="Telephone" />
+        <Button x:Name="rgualoto_button1" Text="Realizar Recarga" Clicked="OnRecargaClicked" />
+        <Label x:Name="rgualoto_label_resultado" Text="{Binding UltimaRecarga}" />
+    </StackLayout>
 </ContentPage>
