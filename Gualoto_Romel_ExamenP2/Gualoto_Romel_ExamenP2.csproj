@@ -63,12 +63,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="RecargaPage.xaml.cs">
-	    <DependentUpon>RecargaPage.xaml</DependentUpon>
-	  </Compile>
-	</ItemGroup>
-
-	<ItemGroup>
 	  <MauiXaml Update="NombresPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

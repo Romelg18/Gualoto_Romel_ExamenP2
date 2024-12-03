@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Gualoto_Romel_ExamenP2.NombresPage"
-             Title="NombresPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Nombres">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Text="Romel" Grid.Row="0" Grid.Column="0" />
+        <Label Text="Israel" Grid.Row="0" Grid.Column="1" />
+        <Label Text="Gualoto" Grid.Row="1" Grid.Column="0" Style="{StaticResource ApellidoStyle}" />
+        <Label Text="Arevalo" Grid.Row="1" Grid.Column="1" Style="{StaticResource ApellidoStyle}" />
+    </Grid>
 </ContentPage>

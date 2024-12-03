@@ -6,7 +6,7 @@
         <Tab Title="Recarga" Icon="tab1_icon.png">
             <ShellContent ContentTemplate="{DataTemplate local:RecargaPage}" />
         </Tab>
-        <Tab Title="Nombres" Icon="tab2_icon.png">
+        <Tab Title="Nombres" Icon="tab2_icon.jpg">
             <ShellContent ContentTemplate="{DataTemplate local:NombresPage}" />
         </Tab>
     </TabBar>
